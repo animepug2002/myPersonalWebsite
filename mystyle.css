@@ -5,14 +5,14 @@ body {
 
 h1 {
   color: white;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .myheaders {
   background-color: black;
   color: white;
-  padding: 30px
-  font-size: 20px;
+  padding: 2px;
+  font-size: 30px;
 }
 
 
@@ -20,5 +20,37 @@ h1 {
 #content (display: name)
 
 .shadow {
-  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+,
+                                                Chrome 6+, iOS 5 */
+}
+
+span{                              /*chage font inside the text box*/
+ font-size: 20.5px;
+}
+
+.bg-pad {                         /*does the white block of backgorund text*/
+ background: #FFFFFF;
+ color: #00000;
+ line-height: 2.5rem;
+}
+
+
+details {
+  user-select: none;
+}
+
+details>summary span.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+
+/*details[open] summary span.icon {
+  transform: rotate(180deg);
+}
+*/
+summary {
+  display: flex;
+  cursor: pointer;
 }
