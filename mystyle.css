@@ -1,17 +1,25 @@
 body {
   background-image: url("refForPersonal/BG2.JPG");
   background-size: 100% 100%;
+
 }
 
 h1 {
   color: white;
-  margin-left: 10px;
+  padding: auto;
+  font-style: italic;
+  font-family: "Silkscreen", Static;
+}
+h2 {
+  color: white;
+  padding: auto;
+  font-family: "Cutive Mono", Static;
 }
 
 .myheaders {
   background-color: black;
   color: white;
-  padding: 2px;
+  padding: 5px;
   font-size: 30px;
 }
 
@@ -24,33 +32,54 @@ h1 {
                                                 Chrome 6+, iOS 5 */
 }
 
-span{                              /*chage font inside the text box*/
- font-size: 20.5px;
-}
-
 .bg-pad {                         /*does the white block of backgorund text*/
- background: #FFFFFF;
- color: #00000;
- line-height: 2.5rem;
+ background: rgba(0,0,0,.6);
+ color: white;
+ padding: 5px;
+ line-height: 45px;
+ font-size: 20.5px;
+ font-family: "Courier New", monospace;
 }
-
+.translucentBlock {               /*tanslucent bakground text block*/
+  background-color: rgba(0,0,0,.5);
+  color: #d3d3d3;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-family: "Pixelify Sans";
+}
 
 details {
   user-select: none;
 }
-
 details>summary span.icon {
   width: 24px;
   height: 24px;
   transition: all 0.3s;
   margin-left: auto;
 }
-
-/*details[open] summary span.icon {
-  transform: rotate(180deg);
-}
-*/
 summary {
   display: flex;
   cursor: pointer;
+}
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
 }
